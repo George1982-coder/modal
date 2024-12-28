@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Nosifer&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.7rem 3.5rem;
+  margin: 5rem 2rem;
+  border: none;
+  background: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+}
+p {
+  font-size: 1.5rem;
+}
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 10;
+  border: 10px solid lightskyblue;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000064;
+  z-index: 5;
+}
